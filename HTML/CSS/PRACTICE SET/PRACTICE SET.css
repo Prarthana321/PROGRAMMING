@@ -1,0 +1,113 @@
+/* PRACTICE SET 1
+
+/* CREATE A SIMPLE DIV WITH AN ID "BOX". ADD SOME TEXT CONTENT INSIDE THE DIV. SET THE BACKGROUND COLOR TO BLUE. */
+/* #BOX{
+    background-color: blue;
+} */
+
+/* CREATE 3 HEADINGS WITH H1,H2,H3. GIVE THEM ALL A CLASS "HEADING" AND SET COLOR OF "HEADING" TO RED. */
+/* .HEADING{
+    color: red;
+} */
+
+/* CREATE A BUTTON AND SET ITS BACKGROUND COLOR TO:
+ -GREEN USING CSS STYLESHEET.
+ -BLUE USING STYLE TAG.
+ -PINK USING INLINE STYLE. */
+/* button{
+    background-color: aliceblue;
+} */
+
+
+/* PRACTICE SET 2 */
+
+/* CREATE A HEADING CENTERED ON THE PAGE WITH ALL OF ITS TEXT CAPITALIZED BY DEFAULT.  */
+/* h4{
+    text-align: center;
+    text-transform: capitalize;
+} */
+
+/* SET THE FONT FAMILY OF ALL THE CONTENT IN THE DOCUMENT TO "TIMES NEW ROMAN".  */
+/* *{
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/* CREATE ON DIV INSIDE ANOTHER DIV.
+ -SET ID AND TEXT "OUTER" FOR THE FIRST ONE & "INNER" FOR THE SECOND ONE.
+ -SET THE OUTER DIV TEXT SIZE TO "25px" AND INNER DIV TEXT SIZE TO "10px". */
+/* #OUTER{
+    font-size: 25px;
+}
+#INNER{
+    font-size: 10px;
+} */
+
+/* PRACTICE SET 3 */
+
+/* CREATE A DIV WITH HEIGHT AND WIDTH "100px". SET THE BACKGROUND COLOR TO GREEN AND THE BORDER RADIUS TO 50%. */
+/* #SET3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+} */
+
+/* PRACTICE SET 4 */
+
+/* CREATE A WEBPAGE LAYOUT WITH HEADER, A FOOTER AND A CONTENT AREA CONTAINING 3 DIVS. SET THE HEIGHT AND WIDTH OF THE DIVS TO "100px". ADD BORDERS TO ALL THE DIVS. ADD A DIFFERENT BACKGROUND COLOR TO EACH DIV WITH AN OPACITY OF 0.5. GIVE THE CONTENT AREA AN APPROPRIATE HEIGHT.  */
+/* #DIV1{
+    height: 100px;
+    width: 100px;
+    border: black;
+    background-color: rgba(255,0,0, 0.5);
+    padding: 1px,1px,1px,1px;
+}
+#DIV2{
+    height: 100px;
+    width: 100px;
+    border: black;
+    background-color: rgba(0,255, 0, 0.5);
+    padding: 2px,2px,2px,2px;
+}
+#DIV3{
+    height: 100px;
+    width: 100px;
+    border: black;
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 3px,3px,3px,3px;
+} */
+
+/* PRACTICE SET 5 */
+
+/* CREATE THE FOLLOWING LAYOUT USING THE GIVEN HTML. GIVE THE DIV HEIGHT, WIDTH AND SOME BACKGROUND IMAGE. USE THE APPROPRIATE POSITION PROPERTY FOR THE DIV ELEMENT TO LACE IT AT THE RIGHT END OF THE PAGE. */
+/* #SET5{
+    height: 100px;
+    width: 100px;
+    background-image: url("PICTURE.jpg");
+    background-size: cover;
+    position: fixed;
+    right: 0px;
+    top: 50px;
+}  */
+
+/* PRACTICE SET 6 */
+
+/* CREATE A NAVBAR WITH 4 OPTIONS IN THE FORM OF ANCHOR TAGS INSIDE LIST ITEMS. NOW,USE FLEXBOX TO PLACE THEM ALL SPACED EQUALLY IN A SINGLE LINE. */
+div{
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+}
+/* USE FLEXBOX TO CENTER ONE DIV INSIDE ANOTHER DIV. */
+
+/* WHICH HAS HIGHER PRIORITY- ALIGN-ITEMS OR ALIGN-SELF */

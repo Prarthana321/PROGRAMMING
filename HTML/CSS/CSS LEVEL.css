@@ -1,0 +1,370 @@
+/* LEVEL 1
+CSS-CASCADING STYLE SHEET.
+IT IS A LANGUAGE THAT IS USED TO DESCRIBE THE STYLE OF A DOCUMENT.
+BASIC SYNTAX: 
+H1{color:red;}, HERE H1 IS SELECTOR, COLOR IS PROPERTY AND RED IS VALUE.
+INCLUDING STYLE: 
+ -INLINE: <h1 style="color=red"> TEXT </h1>
+ -STYLE TAG: <style> h1{color:red;} </style> [INSIDE HEAD TAG].
+ -EXTERNAL STYLESHEET: WRITING CSS IN A SEPARATE DOCUMENT AND LINKING IT WITH HTML FILE. <link rel="STYLESHEET" href="LEVEL 1.css">
+CSS PROPERTY::
+ -COLOR PROPERTY: IT IS USED TO SET COLOR OF FORE GROUND, FOR EG: color:red;
+ -BACKGROUND COLOR PROPERTY: IT IS USED TO SET COLOR OF BACKGROUND, FOR EG: background-color: red;
+COLOR SYSTEMS::
+ -RGB: R-RED G-GREEN B-BLUE. color:rgb(250,0,0);. 3 PRIMARY COLORS: RED,BLUE,GREEN.
+ -HEX: HEXADECIMAL, color:#ff0000; .
+SELECTORS::
+ -UNIVERSAL SELECTOR: *{}
+ -ELEMENT SELECTOR: h1{}
+ -ID SELECTOR: #myID {}
+ -CLASS SELECTOR: .myclass{} */
+
+/* COLOR PROPERTY */
+h1{
+    color: blueviolet;
+}  
+P{
+    color: brown;
+} 
+/* BACKGROUND COLOR PROPERTY */
+body{
+    background-color: rgb(7, 85, 59);
+}
+
+/* LEVEL 2
+TEXT PROPERTIES: 
+ -TEXT ALIGN: text-align:left/right/center/start/end.
+ -TEXT DECORATION: text-decoration: underline/overline/line-through/none.
+ -FONT WEIGHT: font-weight:normal/bold/bolder/lighter, font-weight:100-900.
+ -FONT FAMILY: font-family:arial, font-family:arial,roboto.
+ -LINE HEIGHT: line-height:normal, line-height:2px.
+ -TEXT TRANSFORM: text-transform: uppercase/lowercase/capitalize/none.
+UNITS IN CSS:
+ -ABSOLUTE:
+  --PIXELS[px]: 96px=1inch, font-size:2px. */
+
+ /* TEXT ALIGN PROPERTY */
+h1{
+    text-align: center;
+}
+ p{
+    text-align: left;
+ }
+/* TEXT DECORATION PROPERTY */
+h1{
+    text-decoration: underline;
+}
+p{
+    text-decoration: line-through;
+}
+/* FONT WEIGHT PROPERTY */
+h1{
+    font-weight: bolder;
+}
+p{
+    font-weight: 100;
+}
+/* FONT FAMILY PROPERTY */
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* LINE HEIGHT PROPERTY */
+h1{
+    line-height: normal;
+}
+p{
+    line-height: 50px;
+}
+/* TEXT TRANSFORM PROPERTY */
+h1{
+    text-transform: uppercase;
+}
+p{
+    text-transform: capitalize;
+}
+/* ABSOLUTE UNIT [PIXELS] */
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 30px;
+}
+
+/* LEVEL 3
+BOX MODEL IN CSS
+ -HEIGHT: IT SETS THE CONTENT AREA HEIGHT OF AN ELEMENT. height:50px;.
+ -WIDTH: IT SETS THE CONTENT AREA WIDTH OF THE ELEMENT. width:50px;.
+ -BORDER: IT IS USED TO SET ELEMENT'S BORDER. border-width:2px, border-style:solid/dotted/dashed, boder-color:black.
+   --BORDER SHORTHAND: border:2px solid black;.
+   --BORDER RADIUS: IT IS USED TO ROUND THE CORNORS OF AN ELEMENT'S OUTER BORDER EDGE. border-radius: 10px;, border-radius: 50%;.
+ -PADDING: 
+  --PADDING LEFT: padding-left
+  --PADDING RIGHT: padding-right
+  --PADDING TOP: padding-top
+  --PADDING BOTTOM: padding-bottom
+  --PADDING SHORTHAND: padding: 1px 2px 3px 4px, TOP|RIGHT|BOTTOM|LEFT -> CLOCKWISE.
+ -MARGIN
+  --MARGIN RIGHT: margin-right
+  --MARGIN LEFT: margin-left
+  --MARGIN TOP: margin-top
+  --MARGIN BOTTOM: margin-bottom
+  --MARGIN SHORTHAND: margin:1px 2px 3px 4px; TOP|RIGHT|BOTTOM\LEFT ->CLOCKWISE. */
+
+ /* HEIGHT PROPERTY */
+ p{
+    height: 10px;
+ }
+/* WIDTH PROPERTY */
+p{
+    width: 10px;
+}
+/* BORDER PROPERTY */
+h1{
+    border-width: 20px;
+    border-style: dotted;
+    border-color: black;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+/* PADDING PROPERTY */
+h1{
+    padding-left: 25px;
+}
+/* MARGIN PROPERTY */
+h1{
+    margin-top: 50px;
+}
+
+/* LEVEL 4
+DISPLAY PROPERTY:
+ -INLINE: TAKES ONLY THE SPACE REQUIRED BY THE ELEMENT. [NO MARGIN/PADDING]. display:inline 
+ -BLOCK: TAKES FULL SPACE AVAILABLE IN WIDTH. display:block.
+ -INLINE-BLOCK: SIMILAR TO INLINE BUT WE CAN SET MARGIN AND PADDING. display:inline-block.
+ -NONE: TO REMOVE ELEMENT FROM DOCUMENT FLOW.
+ -VISIBILITY: WHEN VISIBILITY IS SET TO NONE,SPACE FOR THE ELEMENT IS RESERVED. BUT FOR DISPLAY SET TO NONE, NO SPACE IS RESERVED OR BLOCKED FOR THE ELEMENT. visibility:hidden;.
+ALPHA CHANNEL:
+OPACITY[0 TO 1]
+ -RGBA: color:rgba(255,0,0,0.5);. */
+
+div{
+    background-color: bisque;
+}
+/* INLINE PROPERTY */
+div{
+    display: inline;
+}
+button{
+    display: block;
+}
+/* INLINE-BLOCK PROPERTY */
+#MYID{
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    padding: 25px;
+    display: inline-block;
+    color: rgba(red, green, blue, alpha);
+}
+
+/* LEVEL 5
+UNITS IS CSS
+REALTIVE:
+ -%: IT IA OFTEN USED TO DEFINE A SIZE AS RELATIVE TO AN ELEMENT'S PARENT OBJECT. width:33%; , margin-left:50%; .
+ -em: IF THE FONT SIZE OR WIDTH OF THE THE PARENT TAG IS 100px THEN 1EM MEANS 100px.
+ -rem: FOOT SIZE OF ROOT ELEMENT.
+ -vh: RELATIVE TO 1% VIEWPORT HEIGHT.
+ -vw: RELATIVE TO 1% VIEWPORT WIDTH.
+POSITION: THE POSITION CSS PROPERTY SETS HOW AN ELEMENT IS POSITIONED IN A DOCUMENT. position:static/relative/absolute/fixed.
+ -STATIC: DEFAULT POSITION [THE TOP,RIGHT,BOTTOM,LEFT, AND Z-INDEX PROPERTIES HAVE NO EFFECT].
+ -RELATIVE: ELEMENT IS RELATIVE TO ITSELF. [THE TOP,RIGHT,BOTTOM,LEFT AND Z-INDEX WILL WORK].
+ -ABSOLUTE: POSITIONED RELATIVE TO ITS CLOSEST POSITIONED ANCESTOR.[REMOVED FROM THE FLOW]
+ -FIXED: POSITIONED RELATIVE TO BROWSER.[REMOVED FROM FLOW].
+ -STICKY: POSITIONED BASED ON USER'S SCROLL POSITION. 
+Z-INDEX: IT DESIDES THE STACK LEVEL OF ELEMENTS. OVERLAPPING ELEMENTS WITH A LARGER Z-INDEX COVER THOSE WITH A SMALLER ONE. z-index: auto(0), z-index: 1/2/.....
+BACKGROUND IMAGE: IT IS USED TO SET AN IMAGE AS BACKGROUND. background-image: url("LINK");
+BACKGROUND SIZE: background-size: cover/ contain/auto.*/
+
+/* % RELATIVE UNIT */
+#BOX1{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    display: inline-block;
+    font-size: 10px;
+}
+#BOX2{
+    height: 50px;
+    width: 50%;
+    background-color: blue;
+    display: inline-block;
+    font-size: 2em;
+}
+/* POSITION UNIT */
+div{
+    height:100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+/* STATIC POSITION */
+#DIV1{
+    position: static;
+}
+/* RELATIVE POSITION */
+#DIV2{
+    position: relative;
+    top: 10px;
+}
+/* ABSOLUTE POSITION */
+#DIV3{
+    position: absolute;
+    top: 10px;
+}
+/* FIXED POSITION */
+#DIV4{
+    position: fixed;
+    right: 20%;
+}
+/* STICKY POSITION */
+#DIV5{
+    position: sticky;
+    top: 2px;
+}
+/* Z-INDEX */
+#DIV2{
+    z-index: 1;
+}
+/* BACKGROUND IMAGE  */
+#DIV1{
+    background-image: url("PICTURE.jpg");
+}
+/* BACKGROUND SIZE */
+#DIV1{
+    background-size: cover;
+}
+
+/* LEVEL 6
+FLEXBOX: FLEXIBLE BOX LAYOUT. IT IS A ONE DIMENSIONAL LAYOUT METHOD FOR ARRANGING ITEMS IN ROWS AND COLUMNS.
+FLEXBOX DIRECTION:IT SETS HOW FLEX ITEMS ARE PLACED IN THE FLEX CONTAINER,ALONG WITH AXIS AND DIRECTION. flex-direction: row[DEFAULT]/row-reverse/column/column-reverse; .
+FLEX PROPERTIES: [FOR FLEX CONTAINER]
+ -JUSTIFY CONTENT: ALIGNMENT ALONG THE MAIN AXIS. justify-content:flex-start/flex-end/centre/space-evenly; .
+ -FLEX WRAP: flex-wrap:now-wrap/wrap/wrap-reverse; .
+ -ALIGN ITEMS: ALIGNMENT ALONG THE CROSS AXIS.
+ -ALIGN CONTENT: ALIGNMENT OF SPACE BETWEEN AND AROUND THE CONTENT ALONG CROSS-AXIS.
+FLEX PROPERTIES: [FOR FLEX ITEM]
+ -ALIGN SELF: ALIGNMENT OF INDIVIDUAL ALONG THE CROSS AXIS.
+ -FLEX GROW: HOW MUCH A FLEX ITEM WILL GROW RELATIVE TO THE REST OF THE FLEX ITEMS IF SPACE IS AVAILABLE.
+ -FLEX SHRINK: HOW MUCH A FLEX ITEM WILL SHRINK RELATIVE TO THE REST OF THE FLEX ITEMS IF SPACE IS AVAILABLE. */
+
+body{
+    text-align: center;
+}
+div{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid black;
+}
+#CONTAINER{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;  /*FLEX DIRECTION [FOR FLEX CONTAINER] */
+    justify-content: center; /*FLEX PROPERTY [FOR FLEX CONTAINER] */
+    flex-wrap: wrap; /*FLEX PROPERTY [FOR FLEX CONTAINER] */
+    align-items: center; /*FLEX PROPERTY [FOR FLEX CONTAINER] */
+    align-content: center; /*FLEX PROPERTY [FOR FLEX CONTAINER] */
+}
+#ID1{
+    background-color: blanchedalmond;
+    flex-grow: 2; /*FLEX PROPERTIES: [FOR FLEX ITEM]*/
+}
+#ID2{
+    background-color: aliceblue;
+    height: 100px;
+    align-self: flex-end;  /*FLEX PROPERTIES: [FOR FLEX ITEM]*/
+}
+#ID3{
+    background-color: aqua;
+    flex-shrink: 2; /*FLEX PROPERTIES: [FOR FLEX ITEM]*/
+}
+#ID4{
+    background-color: azure;
+}
+#ID5{
+    background-color: beige;
+}
+
+/* LEVEL 7
+MEDIA QUERIES: HELPS CREATE A RESPOSIVE WEBSITE.
+ -@media(width/min-width:600px){div{background-color:red;}}
+ -@media(min-width:200px) and (max-width:300px){div{background-color:red;}} */
+ #ID{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+ }
+
+@media(width:600px){
+    div{
+        background-color: blue;
+    }
+}
+
+/* LEVEL 8
+TRANSITIONS:TRANSITIONS ENABLE YOU TO DEFINE THE TRANSITION BETWEEN TWO STATES OF AN ELEMENT.
+ -TRANSITION PROPERTY: PROPERTY YOU WANT TO TRANSITION.[FONT-SIZE,WIDTH ETC...].
+ -TRANSITION DURATION: 2s/ 4ms..
+ -TRANSITION TIMING FUNCTION: ease-in/ease-out/linear/steps..
+ -TRANSITION DELAY: 2s/4ms...
+TRANSITION SHORTHAND: PROPERTY NAME|DURATION|TIMING-FUNCTION|DELAY.
+ -transition:font-size 2s ease-in-out 0.2s;
+CSS TRANSFORM: IT IS USED TO APPLY 2D AND 3D TRANSFORMATIONS TO AN ELEMENT.
+ -ROTATE: transform:rotate(45deg);
+ -SCALE: transform:scale(2)/scale(0.5)/scale(1,2)/scaleX(0.5)/scaleY(0.5);
+ -TRANSLATE: transform:translate(20px)/translate(20px,50px)/translateX(20px)/translateY(20px);
+ -SKEW: transform:skew(30deg);
+ANIMATION:TO ANIMATE CSS ELEMENTS. @KEYFRAME MYNAME{from{font-size:20px;}to{font-size:40px;}}
+ANIMATION PROPERTIES
+ -ANIMATION-NAME
+ -ANIMATION-DURATION
+ -ANIMATION-TIMEING-FUNCTION
+ -ANIMATION-DELAY
+ -ANIMATION-ITERATION-COUNT
+ -ANIMATION-DIRECTION
+ANIMATION SHORTHAND: animation:myNAME 2s linear 3s infinite normal
+% IN ANIMATION:
+@keyframe myNAME{
+   0%{font-size:20px;}
+   50%{font-size:30px;}
+   100%{font-size:40px;}
+} */
+
+button:hover{
+    background-color: aliceblue;
+    color: black;
+    transition-property: all; /*TRANSITION PROPERTY*/
+    transition-duration: 2s;  /*TRANSITION DURATION*/
+    transition-timing-function: steps(5);  /*TRANSITION TIMING FUNCTION*/
+    transform: rotate(54deg);  /*TRANSFORM ROTATE*/
+    transform: scale(2);  /*TRANSFORM SCALE*/
+    transform: translate(20px);  /*TRANSFORM TRANSLATE*/
+    transform: skew(30deg);  /*TRANSFORM SKEW*/
+}
+div{
+    animation-name: COLORANIMAATE;  /*ANIMATION NAME*/
+    animation-duration: 3s;  /*ANIMATION DURATION*/
+    animation-timing-function: ease-in;  /*ANIMATION TIMING FUNCTION*/
+    animation-delay: 1s;  /*ANIMATION DELAY*/
+    animation-iteration-count: 1;  /*ANIMATION ITERATION COUNT*/
+}
+/* ANIMATION PROPERTIES */
+@keyframes COLORANIMAATE {
+    from {background-color: aliceblue;}
+    to {background-color: black;}
+}
+

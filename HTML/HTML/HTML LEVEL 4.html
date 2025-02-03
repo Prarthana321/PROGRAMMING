@@ -1,0 +1,130 @@
+<!-- LEVEL 4
+LISTS:IT IS USED TO REPRESENT REAL LIFE LIST DATA.
+ -UNORDERES LISTS: <ul> <li> APPLE </li> <li> MANGO </li> </ul>.
+ -ORDERED LISTS: <ol> <li> APPLE</li> <li> MANGO </li> </ol>.
+TABLES:IT IS USED TO REPRESENT REAL LIFE TABLE DATA.
+ -<tr>:IT IS USED TO DISPLAY TABLE ROW.
+ -<td>:IT IS USED TO DISPLAY TABLE DATA.
+ -<th>:IT IS USED TO DISPLAY TABLE HEADER.
+CAPTION IN TABLES: <caption> CAPTION </caption>.
+THEAD:IT IS USED TO WRAP TABLE HEAD. <thead>.
+TBODY:IT IS USED TO WRAP TABLE BODY. <tbody>.
+COLSPAN:DEFINES THE NO.OF COLUMN SPACE IT SHOULD TAKE. colspan="number".
+FORMS:FORMS ARE USED TO COLLECT DATA FROM THE USER, FOR EG-SIGN UP,LOGIN ETC... . <form> FORM CONTENT </form>.
+ACTION IN FORM: IT IS AN ATTRIBUTE ISED TO DEFINE WHAT ACTION NEEDS TO BE PERFORMED WHEN A FORM IS SUBMITTED. <form action="/action.php">.
+FORM ELEMENT:
+ -INPUT: <input type="text" placeholder="Enter Name">.
+LABEL:
+<label for="id1">
+    <input type="radio"value="class X"name="class" id="id1">
+</label>
+CLASS & ID:
+<div id="id1" class="group1">
+</div>
+CHECKBOX:
+<label for="id1">
+    <input type="checkbox"value="class X"name="class"id="id1">
+</label>
+SELECT:
+ <select name="CITY" id="CITY"> 
+            <option value="SHARJAH">SHARJAH</option>
+            <option value="DUBAI">DUBAI</option>
+            <option value="RAK">RAK</option>
+ </select>
+ IFRAME: IT IS USED TO DISPLAY A WEBSITE INSIDE WEBSITE. <iframe src="LINK">.
+VIDEO TAG:
+<video src="LINK">MY VIDEO</video>.
+ -CONTROLS,HEIGHT,WIDTH,LOOP,AUTOPLAY. -->
+
+<!-- BOILER PLATE CODE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVEL 4</title>
+</head>
+<body>
+   <header></header> <!--HEADER TAG --> 
+
+   <main> <!--MAIN OPENING TAG--> 
+
+    <ul> <!--UNORDERED LIST OPENING TAG--> 
+        <li>APPLE</li> <!--LIST ITEM TAG-->
+             <ul>
+                <li> SEASON:SUMMER</li>
+             </ul>
+        <li>MANGO</li> <!--LIST ITEM TAG--> 
+             <ul>
+                <li>SEASON:WINTER</li>
+             </ul>
+    </ul> <!--UNORDERED LINK CLOSING TAG--> 
+
+    <ol> <!--ORDERED LIST OPENING TAG--> 
+        <li>APPLE</li> <!--LIST ITEM TAG--> 
+        <li>MANGO</li> <!--LIST ITEM TAG--> 
+        <li>LITCHI</li> <!--LIST ITEM TAG--> 
+    </ol> <!--OREDERED LIST CLOSING TAG--> 
+
+    <table> <!--TABLE OPENING TAG--> 
+        <thead> <!--THEAD OPEING TAG--> 
+        <caption>STUDENT DATA</caption> <!--CAPTION TAG--> 
+        <tr> <!--TABLE ROW OPENING TAG--> 
+            <th> NAME</th> <!--TABLE HEADER TAG--> 
+            <th> COURSE</th> <!--TABLE HEADER TAG--> 
+        </tr> <!--TABLE ROW CLOSING TAG--> 
+        </thead> <!--THEAD CLOSING TAG--> 
+
+        <tbody> <!--TBODY OPENING TAG--> 
+        <tr> <!--TABLE ROW OPENING TAG--> 
+            <th>PRARTHANA</th> <!--TABLE HEADER TAG--> 
+            <th>CC</th> <!--TABLE HEADER TAG--> 
+        </tr> <!--TABLE ROW CLOSING TAG-->
+        </tbody> <!--TBODY CLOSING TAG--> 
+    </table>  <!--TABLE CLOSING TAG--> 
+
+    <form> <!--FORM OPENING TAG--> 
+        <input type="text" placeholder="USERNAME"> <!--INPUT TAG-->
+        <input type="password" placeholder="PASSWORD"> <!--INPUT TAG--> 
+        <br>
+        <label for="ID1"> <!--LABEL OPENING TAG--> 
+            <input type="radio" value="class X" name="CLASS" id="ID1">CLASS X <!--TYPE=RADIO--> 
+        </label> <!--LABEL CLOSING TAG--> 
+        <br>
+        <label for="ID2"> <!--LABEL OPENING TAG--> 
+            <input type="radio" value="class XII" name="CLASS" id="ID2"> CLASS XII <!--TYPE=RADIO--> 
+        </label> <!--LABEL CLOSING TAG--> 
+        <br>
+        <div id="ID1" class="group1"></div> <!--CLASS AND ID TAG--> 
+        <div id="ID2" class="group1"></div> <!--CLASS AND ID TAG--> 
+        <br>
+        <label for="ID3"> <!--LABEL OPENING TAG--> 
+            <input type="checkbox" value="CLASS X" name="CLASS" id="ID3">CLASS X <!--TYPE=CHECKBOX--> 
+        </label> <!--LABEL CLOSING TAG-->
+        <label for="ID4"> <!--LABEL TAG--> 
+            <input type="checkbox" VALUE="CLASS XI" name="CLASS" id="ID4">CLASS XI <!--TYPE CHECKBOX--> 
+        </label> <!--LABEL TAG--> 
+        <br>
+        <textarea name="FEEDBACK" id="101" placeholder="PLEASE GIVE FEEDBACK" rows="5"></textarea> <!--TEXT AREA TAG--> 
+        <br>
+        <select name="CITY" id="CITY"> <!--SELECT OPENING TAG--> 
+            <option value="SHARJAH">SHARJAH</option> <!--OPTION TAG--> 
+            <option value="DUBAI">DUBAI</option> <!--OPTION TAG--> 
+            <option value="RAK">RAK</option> <!--OPTION TAG--> 
+        </select> <!--SELECT CLOSING TAG--> 
+        <br>
+        <input type="submit" value="submit"> <!--TYPE=SUBMIT--> 
+    </form> <!--FORM CLOSING TAG--> 
+
+    <br>
+
+   </main> <!--MAIN CLOSING TAG--> 
+
+   <iframe src="http://127.0.0.1:5500/LECTURE%201-%20HTML%20INTRODUCTION/HTML%20LEVEL%203.html"></iframe> <!--IFRAME TAG--> 
+   <br>
+
+   <video src="https://www.youtube.com/embed/03E-KkHOtFI?si=XbN5iFqQuUn36Epy">KISSE KA SIKKA</video> <!--VIDEO TAG--> 
+
+   <footer></footer> <!--FOOTER TAG--> 
+</body>
+</html>
